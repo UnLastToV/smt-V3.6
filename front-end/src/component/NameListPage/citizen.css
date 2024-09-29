@@ -1,0 +1,219 @@
+/* Adjustments to the main container and header */
+.main-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.add-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments to the search input and date pickers */
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  border-color: rgb(206, 209, 211);
+}
+
+.search-container input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  /* border: 1px solid #000000; */
+  /* margin-bottom: 10px; */
+}
+
+.hr-line {
+  color: black;
+  border: 1px solid #979797;
+}
+
+/* Flexbox for the date pickers */
+.datepickers-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.date-background {
+  width: 48%;
+}
+
+.MuiTextField-root {
+  width: 100%;
+}
+
+/* Order list adjustments */
+.order-list {
+  margin-top: 20px;
+  /* font-size: 18px; */
+}
+
+.order-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 2 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+} */
+
+.order-card .order-customer{
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* .order-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-weight: bold;
+} */
+
+/* mobile.css */
+
+/* Container for the main page */
+.main-container {
+  padding: 20px;
+}
+
+/* Styling for the order list */
+.order-list {
+  margin-top: 20px;
+}
+
+.order-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+  background-color: rgb(255, 255, 255);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order-customer {
+  font-size: 24px;
+  padding-top: 12px;
+  /* margin-bottom: 8px; */
+}
+
+/* .order-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+} */
+
+.edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.edit-btn:hover {
+  color: #007bff;
+}
+
+/* Styling for the pop-up */
+.MuiDialog-paper {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Input fields within the pop-up */
+.edit-popup-field {
+  margin-bottom: 20px;
+}
+
+.edit-popup-field label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.MuiTextField-root {
+  width: 100%;
+}
+
+
+/* Custom Button for the pop-up close */
+.MuiButton-root {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* .MuiButton-root:hover {
+  background-color: #0056b3;
+} */
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .order-header, .order-status {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+
+  .MuiDialog-paper {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+}
+
